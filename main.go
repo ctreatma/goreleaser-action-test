@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
 
-var version = "dev"
+	"example.com/goreleaser-action-test/version"
+)
 
 func main() {
-	fmt.Printf("version: %s 👍\n", version)
+	fmt.Printf("provider version: %s 👍\n", version.ProviderVersion)
 }
