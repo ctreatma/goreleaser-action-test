@@ -10,4 +10,4 @@ builds:
       - amd64
       - arm64
     ldflags:
-      - -s -w -X example.com/goreleaser-action-test/version.ProviderVersion={{.Version}}
+    - "-s -w -X example.com/goreleaser-action-test/version.ProviderVersion={{.Version}} -X main.version={{.Version}} -X main.commit={{.Commit}}"
